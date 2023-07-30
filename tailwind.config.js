@@ -17,10 +17,10 @@ module.exports = {
         '10xl': '15vw',
       },
       maxWidth: {
-        '1920': '1920px',
+        'dcopMW': '2088px',
       },
       maxHeight: {
-        '1050': '1050px',
+        'dcopMH': '1174px',
       }
     },
   },

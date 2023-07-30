@@ -1,17 +1,19 @@
 import Image from "next/image";
-import GraphicElements from "./GraphicElements";
 
 export default function DcopBackground() {
   return (
     <>
-      <div className={"w-full h-full flex justify-center items-center"}>
-        <GraphicElements />
+      <div
+        className={
+          "absolute top-0 left-0 w-full h-full justify-center items-center flex"
+        }
+      >
         <Image
-          //   src="/dcop_poster_full_ref.png"
+          // src="/dcop_poster_full_ref.png"
           src="/dcop_bg.jpg"
           alt="dcop background"
-          width={1920}
-          height={1080}
+          width={2888}
+          height={1174}
           style={imageStyle}
         />
       </div>
@@ -22,6 +24,11 @@ export default function DcopBackground() {
 const imageStyle = {
   width: "100%",
   height: "auto",
-  maxWidth: "1920px",
-  maxHeight: "1050px",
+  maxWidth: "2088px",
+  maxHeight: "1174px",
+};
+
+const logoPositions = {
+  top: "90%",
+  left: "10%",
 };
