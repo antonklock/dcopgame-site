@@ -43,23 +43,33 @@ export default function GraphicElements(props: GraphicElementsProps) {
       </div>
       <div
         className="RIGHT flex-1 relative pr-20 flex flex-col items-center justify-center"
-        style={{ marginTop: height * 0.1, marginBottom: height * 0.1 }}
+        style={{
+          height: height * 0.75,
+          marginTop: height * 0.1,
+          // marginBottom: height / 10,
+        }}
       >
-        <Image
-          src="/SVG/dcop_logo_01.svg"
-          alt="dcop logo"
-          width={1000 / 1.88}
-          height={1080 / 1.88}
-          style={dcopLogoStyle}
-        />
-        <Image
-          src="/credits.png"
-          alt="dcop credits"
-          width={1500}
-          height={385}
-        />
+        <div className="px-10 flex justify-center">
+          <Image
+            src="/SVG/dcop_logo_01.svg"
+            alt="dcop logo"
+            width={1000 / 1.88}
+            height={1080 / 1.88}
+            style={dcopLogoStyle}
+            // layout="fill"
+          />
+        </div>
 
-        <div className="pt-10">
+        <div className="px-10 py-10">
+          <Image
+            src="/credits.png"
+            alt="dcop credits"
+            width={1300}
+            height={205}
+          />
+        </div>
+
+        <div className="pt-4">
           <SteamButton />
         </div>
       </div>
