@@ -21,7 +21,7 @@ export default function SiteContent() {
                 alt="dcop logo"
                 width={1000}
                 height={1080}
-                // layout="fill"
+                style={dcopLogoStyle}
               />
             </div>
 
@@ -39,7 +39,7 @@ export default function SiteContent() {
             </div>
           </div>
 
-          <div className="flex flex-row justify-center mt-10">
+          <div className="flex flex-row justify-center mt-10 mb-24">
             <Image
               src="/SVG/unity_logo.svg"
               alt="unity logo"
@@ -74,4 +74,8 @@ const bgStyle = {
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
+};
+
+const dcopLogoStyle = {
+  filter: "drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))",
 };
