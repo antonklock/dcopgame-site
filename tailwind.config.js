@@ -21,6 +21,25 @@ module.exports = {
       },
       maxHeight: {
         'dcopMH': '1174px',
+      },
+      colors: {
+        'black': '#000000',
+      },
+      animation: {
+        'pulseSine-1': 'pulseSine 1s infinite',
+        'pulseSine-2': 'pulseSine 2s infinite',
+        'pulseSine-3': 'pulseSine 3s infinite',
+        'pulseSine-4': 'pulseSine 4s infinite',
+        'pulseSine-5': 'pulseSine 5s infinite',
+      },
+      keyframes: {
+        pulseSine: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+        }
+      },
+      blur: {
+        'super': '100px',
       }
     },
   },
