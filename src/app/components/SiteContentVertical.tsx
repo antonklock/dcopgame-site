@@ -10,10 +10,10 @@ export default function SiteContent() {
   return (
     <>
       <div
-        className="h-full w-full flex items-center justify-center"
+        className="h-screen w-full flex items-center justify-center"
         style={bgStyle}
       >
-        <div className="h-full flex flex-col justify-between px-20 max-w-3xl py-10">
+        <div className="h-screen flex flex-col justify-between px-20 max-w-3xl py-10">
           <div className="flex flex-col items-center pt-20">
             <div className="flex justify-center">
               <Image
