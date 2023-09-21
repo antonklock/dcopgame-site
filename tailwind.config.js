@@ -15,6 +15,11 @@ module.exports = {
       },
       fontSize: {
         '10xl': '15vw',
+        'h1': '2.5rem',
+      },
+      fontFamily: {
+        anton: ['var(--font-anton)'],
+        blackOpsOne: ['var(--font-blackOpsOne)'],
       },
       maxWidth: {
         'dcopMW': '2088px',
