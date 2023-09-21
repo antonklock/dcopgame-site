@@ -12,7 +12,7 @@ export default function ImageSpans(props: { vertical?: boolean }) {
             groundbreaking full motion video (FMV) police simulator that thrusts
             players into the heart-pounding action of a newly graduated police
             officer facing off against a ruthless criminal syndicate."
-        image="/GIF/walky.gif"
+        image="/walky.gif"
         vertical={vertical}
       />
 
@@ -22,7 +22,7 @@ export default function ImageSpans(props: { vertical?: boolean }) {
             chasing suspects, engaging in shootouts. With cinematic camera
             angles and action packed sequences, you'll feel like
             you're right in the middle of a blockbuster action movie."
-        image="/GIF/hatguy.gif"
+        image="/hatguy.gif"
         vertical={vertical}
       />
 
@@ -32,7 +32,7 @@ export default function ImageSpans(props: { vertical?: boolean }) {
             with detailed environments and lifelike character performances. The
             game's cinematic score enhances the tension and emotion,
             creating a truly immersive experience."
-        image="/GIF/stairs.gif"
+        image="/stairs.gif"
         vertical={vertical}
       />
     </>
