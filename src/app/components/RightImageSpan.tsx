@@ -22,13 +22,16 @@ export default function RightImageSpan(props: {
     <>
       {vertical ? (
         <div className="flex flex-col mb-32">
-          <Image
+          <video className="rounded-md drop-shadow-lg" autoPlay loop muted>
+            <source src={image} type="video/mp4" />
+          </video>
+          {/* <Image
             className="rounded-md drop-shadow-lg"
             width="500"
             height="500"
             src={image}
             alt="walky"
-          />
+          /> */}
 
           <div className="flex flex-col pt-10">
             <h1 className="text-h1 font-blackOpsOne">{title}</h1>
@@ -37,7 +40,7 @@ export default function RightImageSpan(props: {
         </div>
       ) : (
         <div className="flex flex-row mb-32">
-          <div className="flex flex-col pt-10 pr-10">
+          <div className="flex flex-col pt-10 pr-10 content-center">
             {title.length > 16 ? (
               <>
                 <h1 className="text-h1 -mb-4 font-blackOpsOne">{firstHalf}</h1>
@@ -46,16 +49,25 @@ export default function RightImageSpan(props: {
             ) : (
               <h1 className="text-h1 -mb-2 font-blackOpsOne">{title}</h1>
             )}
-            <p className="w-96 text-sm">{description}</p>
+            <p className="w-96 text-base leading-5">{description}</p>
           </div>
 
-          <Image
+          <video
+            className="rounded-md drop-shadow-lg w-spanVideo"
+            autoPlay
+            loop
+            muted
+          >
+            <source src={image} type="video/mp4" />
+          </video>
+
+          {/* <Image
             className="rounded-md drop-shadow-lg"
             width="500"
             height="500"
             src={image}
             alt="walky"
-          />
+          /> */}
         </div>
       )}
     </>

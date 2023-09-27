@@ -23,13 +23,17 @@ export default function LeftImageSpan(props: {
     <>
       {vertical ? (
         <div className="flex flex-col mb-32">
-          <Image
+          <video className="rounded-md drop-shadow-lg" autoPlay loop muted>
+            <source src={image} type="video/mp4" />
+          </video>
+
+          {/* <Image
             className="rounded-md drop-shadow-lg"
             width="500"
             height="500"
             src={image}
             alt="walky"
-          />
+          /> */}
 
           <div className="flex flex-col pt-10">
             <h1 className="text-h1 font-blackOpsOne">{title}</h1>
@@ -38,15 +42,23 @@ export default function LeftImageSpan(props: {
         </div>
       ) : (
         <div className="flex flex-row mb-32">
-          <Image
+          <video
+            className="rounded-md drop-shadow-lg w-spanVideo"
+            autoPlay
+            loop
+            muted
+          >
+            <source src={image} type="video/mp4" />
+          </video>
+          {/* <Image
             className="rounded-md drop-shadow-lg"
             width="500"
             height="500"
             src={image}
             alt="walky"
-          />
+          /> */}
 
-          <div className="flex flex-col pt-10 pl-10">
+          <div className="flex flex-col pt-10 pl-12">
             {title.length > 15 ? (
               <>
                 <h1 className="text-h1 -mb-2 font-blackOpsOne">{firstHalf}</h1>
@@ -56,7 +68,7 @@ export default function LeftImageSpan(props: {
               <h1 className="text-h1 -mb-2 font-blackOpsOne">{title}</h1>
             )}
 
-            <p className="w-96 text-sm">{description}</p>
+            <p className="w-96 text-base leading-5">{description}</p>
           </div>
         </div>
       )}

@@ -30,6 +30,9 @@ module.exports = {
       colors: {
         'black': '#000000',
       },
+      width: {
+        'spanVideo': '30rem',
+      },
       animation: {
         'pulseSine-1': 'pulseSine 1s infinite',
         'pulseSine-2': 'pulseSine 2s infinite',
