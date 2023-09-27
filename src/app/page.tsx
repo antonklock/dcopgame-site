@@ -6,6 +6,7 @@ import SiteContentVertical from "./components/SiteContentVertical";
 import Image from "next/image";
 import ImageSpans from "./components/ImageSpans";
 import SirensBackground from "./components/SirensBackground";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [width, height] = useWindowSize();
@@ -35,6 +36,8 @@ export default function Home() {
         </div>
 
         <SirensBackground />
+
+        <Footer />
       </div>
     );
   } else {
@@ -51,6 +54,8 @@ export default function Home() {
         </div>
 
         <SirensBackground />
+
+        <Footer />
       </div>
     );
   }
