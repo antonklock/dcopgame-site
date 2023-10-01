@@ -7,6 +7,7 @@ import Image from "next/image";
 import ImageSpans from "./components/ImageSpans";
 import SirensBackground from "./components/SirensBackground";
 import Footer from "./components/Footer";
+import DcopVideo from "./components/DcopVideo";
 
 export default function Home() {
   const [width, height] = useWindowSize();
@@ -31,6 +32,8 @@ export default function Home() {
 
         <div className="h-20 w-full bg-gradient-to-b from-black to-transparent opacity-100 z-10"></div>
 
+        <DcopVideo />
+
         <div className="pt-32 z-20 w-4/5">
           <ImageSpans vertical={true} />
         </div>
@@ -48,6 +51,8 @@ export default function Home() {
         </div>
 
         <div className="h-20 w-full bg-gradient-to-b from-black to-transparent opacity-100 z-10"></div>
+
+        <DcopVideo />
 
         <div className="pt-32 z-20">
           <ImageSpans vertical={false} />

@@ -4,36 +4,22 @@ import Image from "next/image";
 
 export default function SteamButton() {
   const handleOpenSteam = () => {
-    window.open("https://store.steampowered.com/");
+    window.open("https://store.steampowered.com/app/2542320/DCOP/");
   };
 
+  //return a button component with an animated hover effect with tailwind css
   return (
-    <>
-      <button
-        style={buttonStyle}
-        className="flex justify-around items-center px-4"
-        onClick={handleOpenSteam}
-      >
-        <p>Get the game</p>
-        <Image
-          src="/SVG/windows_icon.svg"
-          alt="windows icon"
-          width={30}
-          height={30}
-        />
-      </button>
-    </>
+    <button
+      onClick={handleOpenSteam}
+      className="flex items-center justify-center w-56 h-16 px-8 text-lg font-semibold text-white rounded-lg transition ease-in-out duration-500 bg-gradient-to-b from-dcopBrightBlue to-dcopDarkBlue hover:scale-105 hover:bg-gradient-to-b hover:from-dcopBrightOrange hover:to-dcopDarkOrange"
+    >
+      <span className="mr-4">Get the game</span>
+      <Image
+        src="/SVG/windows_icon.svg"
+        alt="windows icon"
+        width={30}
+        height={30}
+      />
+    </button>
   );
 }
-
-const buttonStyle = {
-  background: "linear-gradient(0deg, #284054 0%, #396283 100%)",
-  color: "white",
-  width: "250px",
-  height: "60px",
-  borderRadius: "3px",
-  fontSize: "1.5em",
-  fontWeight: "bold",
-  cursor: "pointer",
-  boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)",
-};

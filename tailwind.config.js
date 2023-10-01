@@ -13,13 +13,13 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      backgroundColor: {
+        'buttonUp': '#5CA09B',
+        'buttonDown': '#FF6218',
+      },
       fontSize: {
         '10xl': '15vw',
-        'h1': '2.5rem',
-      },
-      fontFamily: {
-        anton: ['var(--font-anton)'],
-        blackOpsOne: ['var(--font-blackOpsOne)'],
+        'h1': '2.3rem',
       },
       maxWidth: {
         'dcopMW': '2088px',
@@ -29,9 +29,14 @@ module.exports = {
       },
       colors: {
         'black': '#000000',
+        'dcopBrightOrange': '#FD881E',
+        'dcopDarkOrange': '#FF6218',
+        'dcopBrightBlue': '#5CA09B',
+        'dcopDarkBlue': '#0C4A4D',
       },
       width: {
         'spanVideo': '30rem',
+        'dcopVideo': '60rem',
       },
       animation: {
         'pulseSine-1': 'pulseSine 1s infinite',
