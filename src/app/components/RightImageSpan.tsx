@@ -33,8 +33,8 @@ export default function RightImageSpan(props: {
           </video>
 
           <div className="flex flex-col pt-10">
-            <h1 className="text-h1 font-bold leading-10">{title}</h1>
-            <p className="text-sm">{description}</p>
+            <h1 className="text-h1 font-bold leading-10 text-white">{title}</h1>
+            <p className="text-sm text-white">{description}</p>
           </div>
         </div>
       ) : (
@@ -42,13 +42,15 @@ export default function RightImageSpan(props: {
           <div className="flex flex-col pt-10 pr-10 content-center">
             {title.length > 16 ? (
               <>
-                <h1 className="text-h1 -mb-4 font-bold">{firstHalf}</h1>
-                <h1 className="text-h1 font-bold">{secondHalf}</h1>
+                <h1 className="text-h1 -mb-4 font-bold text-white">
+                  {firstHalf}
+                </h1>
+                <h1 className="text-h1 font-bold text-white">{secondHalf}</h1>
               </>
             ) : (
-              <h1 className="text-h1 font-bold">{title}</h1>
+              <h1 className="text-h1 font-bold text-white">{title}</h1>
             )}
-            <p className="w-96 text-base leading-5">{description}</p>
+            <p className="w-96 text-base leading-5 text-white">{description}</p>
           </div>
 
           <video
